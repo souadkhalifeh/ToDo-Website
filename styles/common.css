@@ -1,0 +1,12 @@
+.center{
+    text-align: center;
+}
+.blue-bg{
+    background-image: url(../assets/login.jpg);
+}
+.blue-bg::before{
+    opacity: 0.5;
+}
+.font-change{
+    font-family: monospace;
+}

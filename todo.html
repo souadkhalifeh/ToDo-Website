@@ -4,10 +4,24 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>ToDo List</title>
+    <link rel="stylesheet" href="./styles/todo.css">
+    <link rel="stylesheet" href="./styles/common.css">
+
 </head>
 <body>
     <div class="container">
-        <h2>Welcome to your to do list</h2>
+        <h2>ToDo List</h2>
+        <input type="text" id="todo"name="todo" placeholder="ToDo..."><br>
+        <button class="addbtn" id="addtodo">Add Todo</button>
+        <ul id="todoList">
+            <li>Hit the gym</li>
+            <li class="checked">Pay bills</li>
+            <li>Meet George</li>
+            <li>Buy eggs</li>
+            <li>Read a book</li>
+            <li>Organize office</li>
+        </ul>
     </div>
+    <script src="todo.js"></script>
 </body>
 </html>

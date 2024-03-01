@@ -1,20 +1,48 @@
-ul {
-    cursor: pointer;
-    position: relative;
-    padding: 12px 8px 12px 40px;
-    background: #d72727;
-    font-size: 18px;
-    transition: 0.2s;
-    }
-    ul li.checked::before {
-        content: '';
-        position: absolute;
-        border-color: #fff;
-        border-style: solid;
-        border-width: 0 2px 2px 0;
-        top: 10px;
-        left: 16px;
-        transform: rotate(45deg);
-        height: 15px;
-        width: 7px;
-      }    
+body{
+  background-color: rgb(72, 72, 246);
+  color: white;
+  font-family: "Poppins",sans-serif;
+  min-height: 100vh;
+}
+header{
+  font-size:1.5rem;
+}
+header,form{
+  min-height:20vh;
+  display:flex;
+  justify-content:center;
+  align-items: center;
+  gap: 5px;
+}
+.todo,.addbtn{
+  padding:15px;
+  padding-left: 10px;
+  border:none;
+  border-radius: 10px;
+}
+.addbtn{
+  color:red;
+  cursor: pointer;
+  background-color: white;
+  margin-left:3px;
+}
+.addbtn:hover{
+  color: white;
+  background-color: red;
+}
+.fa-plus-circle{
+  margin-top: 5px;
+  margin-left:3px;
+}
+.todo-container{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.todo-list{
+  min-width:30%;
+  list-style: none;
+}
+.todo{
+  
+}

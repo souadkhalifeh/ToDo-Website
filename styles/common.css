@@ -4,9 +4,16 @@
 .blue-bg{
     background-image: url(../assets/login.jpg);
 }
+.white-bg{
+    background-color: white;
+}
 .blue-bg::before{
     opacity: 0.5;
 }
 .font-change{
     font-family: monospace;
+}
+.all-centered{
+    justify-content:center;
+    align-items: center;
 }

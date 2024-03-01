@@ -6,22 +6,19 @@
     <title>ToDo List</title>
     <link rel="stylesheet" href="./styles/todo.css">
     <link rel="stylesheet" href="./styles/common.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
-
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
 </head>
 <body>
-    <header>
+    <div class="container-title">
         <h1>ToDo List</h1>
-    </header>
-    <form action="">
-        <input type="text" id="todo" class="todo" placeholder="ToDo..."><br>
-        <button class="addbtn" type="submit" id="addtodo">
-        <i class="fas fa-plus-circle fa-plus-circle fa-lg"></i>
-    </button>
-        <div class="todo-container">
-            <ul id="todo-list"></ul>
+    </div>
+    <div class="container">
+        <div class="input">
+            <input type="text" name="todo" id="todo" class="input-field">
+            <button type="button" id="addBtn" class="buttoninput"><i class="fa-solid fa-check"></i></button>
         </div>
-    </form>    
+    </div>    
+    <div class="todolist"></div>
     <script src="todo.js"></script>
 </body>
 </html>

@@ -13,54 +13,29 @@ body {
 }
 
 .input {
-  display: grid;
-  column-gap: 5px;
-  grid-template-columns: 60% 10%;
-  justify-content: center;
-  margin-top: 10px;
-}
-
-.input {
+  display: flex;
   min-height: 50px;
   height: 50px;
   max-width: 100%;
   min-width: 100%;
   border-radius: 10px;
-  border-color: #333;
   font-size: 20px;
   padding: 10px 10px;
-  overflow: auto;
-  overflow-x: hidden;
+  display: grid;
+  grid-template-columns: 60% 10%;
+  justify-content: center;
 }
 
-.textarea::-webkit-scrollbar-track {
+
+.addBtn {
   border-radius: 10px;
-  background-color: #333;
-}
-
-.textarea::-webkit-scrollbar {
-  width: 10px;
-  cursor: pointer;
-}
-
-.textarea::-webkit-scrollbar-thumb {
-  border-radius: 10px;
-  background-color: #8f8acc;
-  cursor: pointer;
-}
-
-.textarea:focus {
-  outline: none;
-}
-
-.buttoninput {
-  border-radius: 10px;
-  border-color: #333;
+  max-height: 80px;
   background-color: white;
   font-size: 20px;
+  max-width: 100%;
 }
 
-.buttoninput:hover {
+.addBtn:hover {
   background-color: #8f8acc;
   color: white;
 }
@@ -79,7 +54,6 @@ body {
 .item, .check-button, .trash-button {
   border: none;
   background-color: white;
-  min-height: 50px;
   padding: 10px 10px;
 }
 
@@ -94,6 +68,9 @@ body {
 
 .check-button, .trash-button {
   font-size: 15px;
+  background-color: white;
+  max-width: 100%;
+
 }
 
 .trash-button {
@@ -106,7 +83,7 @@ body {
 }
 
 .trash-button:hover {
-  background-color: #6b73c1;
+  background-color: red;
   color: white;
 }
 
